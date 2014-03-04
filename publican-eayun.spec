@@ -9,7 +9,7 @@ License:	SETUP: Set This
 Group:		Applications/Text
 Buildroot:	%{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
 Buildarch:	noarch
-Source:		https://www.SETUP.set.me.example.com/source/%{name}-%{version}.tgz
+Source:		https://www.SETUP.set.me.example.com/source/%{name}.tgz
 Requires:	publican
 BuildRequires:	publican
 URL:		https://www.SETUP.set.me.example.com
@@ -45,7 +45,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(-,root,root,-)
-%doc README
+%doc README.md
 %doc COPYING
 %{_datadir}/publican/Common_Content/%{brand}
 
