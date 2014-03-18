@@ -23,7 +23,7 @@
 <xsl:import href="http://docbook.sourceforge.net/release/xsl/current/fo/graphics.xsl"/>
 <xsl:import href="../../../xsl/pdf.xsl"/>
 
-<xsl:param name="title.color">#a70000</xsl:param>
+<xsl:param name="title.color">#23838c</xsl:param>
 <xsl:param name="admon.graphics.extension" select="'.svg'"/>
 
 <xsl:attribute-set name="remark.properties">
@@ -39,6 +39,16 @@
 <xsl:param name="sans.font.family">wqy-microhei</xsl:param>
 
 
+<xsl:template name="front.cover">
+  <xsl:call-template name="page.sequence">
+    <xsl:with-param name="master-reference">titlepage</xsl:with-param>
+    <xsl:with-param name="content">
+      <fo:block text-align="center" >
+        <fo:external-graphic src="Common_Content/images/watermark-draft.png" content-width="7cm" />
+      </fo:block>
+    </xsl:with-param>
+  </xsl:call-template>
+</xsl:template>
 
 </xsl:stylesheet>
 
