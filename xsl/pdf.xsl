@@ -50,5 +50,14 @@
   </xsl:call-template>
 </xsl:template>
 
+<!--
+     针对emphasis标记自定义字体和style。
+-->
+<xsl:template match="emphasis">
+    <fo:inline font-family="Droid Sans" font-weight="bold">
+        <xsl:apply-templates/>
+    </fo:inline>
+</xsl:template>
+
 </xsl:stylesheet>
 
