@@ -21,7 +21,7 @@
 		</para>
 		 <blockquote>
 			<para>
-				要看到文件您当前工作目录中文件 <filename>my_next_bestselling_novel</filename> 的内容，请在 shell 提示符后输入 <command>cat my_next_bestselling_novel</command> 命令并按 <keycap>Enter</keycap> 键执行该命令。
+				要看到您当前工作目录中文件 <filename>my_next_bestselling_novel</filename> 的内容，请在 shell 提示符后输入 <command>cat my_next_bestselling_novel</command> 命令并按 <keycap>Enter</keycap> 键执行该命令。
 			</para>
 
 		</blockquote>
